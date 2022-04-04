@@ -48,7 +48,7 @@ if __name__ == '__main__':
 	stemmer = PorterStemmer()
 
 	##load vectorizer and model
-	with open('model/logistic_clf.pkl', 'rb') as f:
+	with open('./SentimentAnalysis/model/logistic_clf.pkl', 'rb') as f:
 	    cv, clf = pickle.load(f)
 	
 	app.run(host='0.0.0.0',port=5000)
